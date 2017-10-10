@@ -8,7 +8,7 @@ request.setAttribute("name", name1);
 %>
 <html>
 <body>
-<h1>Test Jenkins hook5</h1>
+<h1>Test Jenkins hook6</h1>
 <h2>Hello <%=name1 %> !</h2>
 </body>
 </html>
