@@ -2,9 +2,9 @@
 
 set -e
 
-DB_HOST=${DB_HOST:-172.17.42.1}
-DB_USER=${DB_USER:-admin}
-DB_PASS=${DB_PASS:-csphere2015}
+DB_HOST=${DB_HOST:-10.0.2.15}
+DB_USER=${DB_USER:-billwang}
+DB_PASS=${DB_PASS:-test12345}
 
 if ! mysql -u${DB_USER} -p${DB_PASS} -h ${DB_HOST} -e "show databases;" | grep -w xc; then
   mysql -u${DB_USER} -p${DB_PASS} -h ${DB_HOST} -e "create database if not exists xc;"
